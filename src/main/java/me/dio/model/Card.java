@@ -10,10 +10,10 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false, unique = true, precision = 2, scale = 13)
+    @Column(nullable = false, unique = true, precision = 13, scale = 2)
     private String number;
 
-    @Column(name = "avaliableLimit", scale = 13, precision = 2)
+    @Column(name = "avaliableLimit", scale = 2, precision = 13)
     private BigDecimal limit;
 
     public Long getId() {
